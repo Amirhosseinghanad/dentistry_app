@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Estead"; /* set name */
+  font-display: swap;
+  src: url("../assets/font/Estedad-Medium.ttf") format("truetype");
+  font-weight: normal; /* url of the font */
+}
+@font-face {
+  font-family: "Estead"; /* set name */
+  font-display: swap;
+  src: url("../assets/font/Estedad-Medium.ttf") format("truetype");
+  font-weight: 500; /* url of the font */
+}
+@font-face {
+  font-family: "Estead"; /* set name */
+  font-display: swap;
+  src: url("../assets/font/Estedad-Bold.ttf") format("truetype");
+  font-weight: bold; /* url of the font */
+}
+
+@theme {
+  --font-estead: "Estead", sans-serif;
+  --color-system: rgb(20 184 166 / var(--tw-bg-opacity, 1));
+  --color-deep: rgb(17 24 39 / var(--tw-text-opacity, 1));
+  --color-deep-mini: #ffffff1a;
+}
