@@ -22,6 +22,8 @@
 @theme {
   --font-estead: "Estead", sans-serif;
   --color-system: rgb(20 184 166 / var(--tw-bg-opacity, 1));
+  --color-system-soft: rgb(204 251 241 / var(--tw-bg-opacity, 1));
   --color-deep: rgb(17 24 39 / var(--tw-text-opacity, 1));
   --color-deep-mini: #ffffff1a;
+  --color-text: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
