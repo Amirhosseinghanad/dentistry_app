@@ -11,6 +11,8 @@ import { SiAlwaysdata } from "react-icons/si";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import Header from "../component/Header";
 
 function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,47 +29,7 @@ function Home() {
   }, []);
   return (
     <>
-      <section
-        className={`fixed top-0 left-0 right-0 z-50 w-full p-4 px-8 ${scrolled ? "transition-all duration-300 bg-white shadow-md" : "transition-all duration-300"}`}
-      >
-        <nav
-          className={` 2xl:container mx-auto flex justify-between items-center`}
-        >
-          <div className="flex items-center">
-            <img src={Logo} className="w-12 h-12" alt="لوگو وبسایت" />
-            <span
-              className={`font-bold font-estead  mr-2 ${scrolled ? "text-deep" : "text-[#fff]"}`}
-            >
-              کلینیک دندان پزشکی نوین
-            </span>
-          </div>
-          <div className="hidden lg:block">
-            <ul
-              className={`font-estead  flex gap-2 ${scrolled ? "text-deep" : "text-[#fff]"}`}
-            >
-              <li className="hover:text-system cursor-pointer transition-all ease-in-out">
-                صفحه اصلی
-              </li>
-              <li className="hover:text-system cursor-pointer transition-all ease-in-out">
-                درباره ما
-              </li>
-              <li className="hover:text-system cursor-pointer transition-all ease-in-out">
-                نوبت دهی
-              </li>
-            </ul>
-          </div>
-          <div className="flex gap-3 items-center">
-            <button
-              className={`cursor-pointer hover:bg-[#ffffff1a] transition-all ease-in-out px-5 py-2 hover:rounded-lg ${scrolled ? "text-deep" : "text-[#fff]"}`}
-            >
-              ورود
-            </button>
-            <button className="text-white bg-system hover:bg-teal-600 cursor-pointer transition-all ease-in-out px-5 py-2 rounded-lg">
-              ثبت‌نام
-            </button>
-          </div>
-        </nav>
-      </section>
+    <Header/>
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={background} class="w-full h-full object-cover" alt="" />
@@ -216,7 +178,7 @@ function Home() {
         </div>
       </section>
       <section className="py-20 px-6 bg-gradient-to-br from-teal-500 to-teal-600">
-        <div className="2xl:container text-center mx-auto grid grid-cols-4">
+        <div className="2xl:container text-center mx-auto grid gap-12 lg:grid-cols-4">
           <div className="flex gap-2 flex-col items-center justify-center">
             <h1 className="text-white font-black text-6xl">۱۵۰۰+</h1>
             <p className="text-system-soft text-[15px]">بیمار راضی</p>
@@ -248,7 +210,7 @@ function Home() {
       </section>
       <section className="bg-gray-900 text-white py-12 px-6">
         <section className="2xl:container mx-auto ">
-          <div className="grid grid-cols-4 gap-8 px-4">
+          <div className="grid lg:grid-cols-4 gap-8 px-4">
             <div>
               <div className="flex items-center">
                 <img src={Logo} className="w-10 h-10" alt="logo" />
